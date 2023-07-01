@@ -1,0 +1,490 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* nav-item */
+}
+#forresponse{
+    padding: 0px 10px 0px 0px;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+:root{
+    --Primary:#FED049;
+    --Secondary:#007580;
+    --Red:#E01B24;
+    --Grey:#FAFAFA;
+    --Black:#000000;
+}
+/*                                              Stert the bigest div                                */
+
+.bigest-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+}
+
+
+/*                                               End the bigest div                                           */
+/*                                                Start nav                                                    */
+.navbar{
+    /* background-color: #007580; */
+    width: 300px;
+    height: 250px;
+    margin:50px 0px 0px 0px; 
+}
+.navbar-show{
+    display: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.iiccoon{
+    display: flex;
+    flex-direction: row;
+}
+
+/*                                                    End nav                                                        */
+
+#belal , #cetificate ,#location ,#pertwo ,#perthree ,#perone ,#hired ,#paid ,#duration ,#about ,#book ,#firsticonlarge{
+    color: var(--Secondary);
+}
+.i{
+    color: var(--Black);
+    font-size: 22px;
+}
+.continer-1{
+    background-color: var(--Grey);
+    max-width: 900px;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 50px;
+    flex-shrink: 290;
+}
+.sp1{
+    margin-left: auto;
+    border-radius:0px 0px 0px 45px;
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    line-height: 60px; 
+
+}
+.sec-row{
+    margin-top: 70px;
+}
+.desc{
+    margin-top: 60px;
+}
+.list-1{
+    margin:7px 0px 0px 12px;
+}
+
+
+/* ///////////////////////////////           lap view           //////////////////////////////////////// */
+.profile{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    border-radius: 30px;
+    flex-wrap: wrap;
+
+}
+#ABOUTPERSON{
+    order: 2;
+    width: 98%;
+    height: 70px;
+    order: 1;
+}
+
+#name{
+    height: 300px;
+    width: 370px;
+}
+#phonenom{
+    height: 250px;
+    width: 220px;
+}
+#expertise{
+    height: 200px;
+    width: 219px ;
+}
+
+#aboutPara{
+    width: 590px;
+    height: 150px;
+}
+
+#img{
+    height: 290px;
+    width: 219px ;
+    margin-top: -100px;
+}
+
+
+
+.parag{
+    color: var(--Secondary);
+    padding:20px 0px 0px 30px;
+}
+.loremm{
+    padding:20px 30px 0px 30px; 
+}
+
+#nam ,#job ,#company ,#phonenumber ,#email{
+    padding:0px 0px 20px 30px;
+    margin-top: -15px;
+}
+#profileimg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(175, 174, 174);
+    margin: auto;
+}
+#viewprofile{
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(150, 150, 150);
+    margin:30px auto;
+    width: 150px;
+    line-height: 40px;
+    font-size: 24px;
+}
+#ABOUTPER{
+    display: none;
+}
+/* /////////////////////             parttwo              //////////////////////////////////////// */
+
+.parttwo{
+    width: 88%;
+/* min-height: 2000px; */
+    margin:70px auto ;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+}
+.imgperone {
+    width: 100px;
+    height: 100px;
+    color:rgb(143, 143, 143) ;
+    border-radius: 50%;
+    
+}
+.person-1 , .person-2{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 20px 10px 30px;
+}
+.person-2{
+    margin-left: 100px;
+}
+.line ,.line-2{
+    width: 94%;
+    margin:15px auto;
+    height: .5px;
+    background-color: grey;
+}
+.imgpertwo{
+    width: 100px;
+    height: 100px;
+    color: rgb(143, 143, 143);
+    border-radius: 50%;
+    z-index: 11;
+
+}
+.seccolor{
+    width: 90%;
+    margin:-220px auto;
+    height: 500px;
+    background-color: rgb(216, 255, 239);
+    border-radius: 30px;
+}
+.inpu{
+    width: 88%;
+    margin: auto;
+}
+.btn1{
+    background-color: var(--Secondary);
+    border: 0;
+    border-radius: 40px;
+    width: 150px;
+    /* height: 40px; */
+    font-size:24px ;
+    color: white;
+}
+.btn1:hover{
+    background-color: #ffe79e;
+}
+.botton{
+    
+    display: flex;
+    align-items: center;
+    position: absolute; width: 200px; 
+    right: 0;
+
+}
+
+#send{
+    width: 100% ;
+}
+/* Start Nav */
+@media(max-width : 1300px){
+    .navbar-show{
+        display: block;
+
+    }
+    .navbar{
+        width: 900px;
+        margin: 50px auto 0px;
+        height: auto;
+    }
+    .navbar-hide-sm{
+        display: none;
+        flex-shrink: 300;
+    }
+    
+}
+
+
+/* //////////////////////////////////////            tablet view          //////////////// */
+
+@media(max-width : 768px){
+    html{
+       min-height: 3000px;
+    }
+    .profile{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 700px;
+        border-radius: 40px;
+        max-height: 1120px;
+        margin-top: 60px;
+      
+    
+    }
+    #img{
+        height: 350px;
+        width: 99% ;
+        order: 1;
+        margin-top: 0px;
+    }
+    #aboutPara{
+        width: 100%;
+        height: 200px;
+        order: 2;
+    }
+    #name{
+        height: 370px;
+        min-width: 275px;
+        order: 3;
+        /* margin: auto; */
+    }
+    #phonenom{
+        height: 370px;
+        min-width: 265px;
+        order: 4;
+        /* margin-top: -50px; */
+    }
+    #expertise{
+        height: 370px;
+        min-width: 155px ;
+        order: 5;
+        margin:auto;
+    }
+    #sixexpected{
+        padding: 0px 10px 0px 0px;
+    }
+    #ABOUTPER{
+        display: none;
+    }
+    #profileimg{
+       margin-top: 40px;
+    } 
+    #profileimg{
+        margin-top: 40px;
+        
+     } 
+     #viewprofile {
+        width: 90%; 
+     }
+     #viewprofile:hover{
+        background-color: #fcd665;
+        color: white;
+     }
+     .line{
+        display :none ;
+     }
+     .person-2{
+        margin: 30px;
+     }
+   
+     .imgpertwo{
+        width: 80px;
+        height: 80px;
+     } 
+     .botton{
+        position: absolute; width: 200px; 
+        right: 0;
+    }
+    #send{
+        width: 100% ;
+    }
+     /*                                             Start Nav                                  */
+    .navbar{
+        width: 100%;
+    }
+    .nav-item{
+        /* display: block; */
+    }
+    .navbar-hide-sm{
+        display: none;
+        flex-shrink: 300;
+    }
+    .navbar-show{
+        display: block;
+
+    }
+    .navbar{
+        width: 100%; 
+        max-height: 300px;
+        margin: 50px auto 0px;
+    }
+   
+
+
+
+     /*                                                           End Nav                                     */
+
+
+}
+
+/* ///////////////////////       mobile view          ////////// */
+
+@media(max-width:567px){
+    .profile{
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        margin: auto;
+        border-radius: 20px;
+        max-height: 1800px;
+        margin-top: 60px;
+        
+    
+    }
+
+    #img{
+        height: 300px;
+        width: 98% ;
+        order: 1;
+        margin-top: 0px;
+    }
+    #ABOUTPER{
+        order: 2;
+        width: 98%;
+        height: 50px;
+        display: block;
+    }
+    #aboutPara{
+        width: 98%;
+       
+        height: 200px;
+        order: 3;
+    }
+    #name{
+        height: 370px;
+        width: 98%;
+       
+        order: 4;
+    }
+    #phonenom{
+        height: 370px;
+        width: 98%;
+        
+        order: 5;
+    }
+    #expertise{
+        height: 180px;
+        width: 98% ;
+       
+        order: 6;
+    }
+   
+    #profileimg{
+       margin-top: 40px;
+    }  
+    #viewprofile{
+        border-radius: 30px; 
+        margin:30px auto ;
+        width: 95%;
+
+
+    } 
+    #img{
+        height: 350px;
+    }
+    #name{
+        margin-top: -50px;
+    }
+    #phonenom{
+        margin-top: -52px;
+    }
+    #expertise{
+        margin-top: -160px;
+    }
+    #ABOUTPERSON{
+        display: none;
+    }
+    .abuotYou{
+        padding: 2px 20px 30px 25px;
+    }
+   
+    .imgpertwo{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .botton{
+        position: absolute; width: 100%;
+    }
+    #send{
+        width: 100% ;
+        
+    }
+
+    /*                                                       Start nav                                       */
+    .navbar-hide-sm{
+        display: none;
+    }
+    .navbar-show{
+        display: block;
+    }
+    .navbar{
+        width:100%; 
+        max-height: 300px;
+        margin: 50px auto 0px;
+    }
+    .nav-item{
+        display: inline;
+    }
+    #p1{
+        font-size: 20px;
+    }
+    /*                                                        End nav                                           */
+  
+}
+@media(max-width : 500px){
+    .para-namee{
+        margin-top: 35px;
+    }
+}
+
